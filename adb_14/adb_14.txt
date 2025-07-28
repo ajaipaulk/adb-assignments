@@ -1,0 +1,899 @@
+Tasks: 586 total,   1 running, 585 sleeping,   0 stopped,   0 zombie
+  Mem:  5706212K total,  5312008K used,   394204K free,     2140K buffers
+ Swap:  4194300K total,  1369852K used,  2824448K free,  2020832K cached
+800%cpu  58%user 113%nice  71%sys 545%idle   1%iow   0%irq  12%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+12742 u0_a287      20   0 7.1G 209M 116M S  131   3.7   8:54.92 com.snapwork.hd+
+ 7752 u0_a230      20   0 6.0G  76M  33M S 78.3   1.3  93:47.65 com.google.andr+
+ 5093 system       18  -2  13G 353M 162M S 21.6   6.3 109:18.67 system_server
+ 2111 root         RT   0    0    0    0 S  4.6   0.0  15:35.42 [sugov:0]
+19018 shell        20   0 2.0G 5.5M 4.1M R  4.3   0.0   0:00.56 top
+ 4832 statsd       20   0 2.2G 2.9M 2.2M S  2.0   0.0   3:34.53 statsd
+ 2112 root         RT   0    0    0    0 S  1.3   0.0  13:18.91 [sugov:4]
+16093 root          0 -20    0    0    0 I  1.0   0.0   0:02.03 [kworker/0:1H]
+ 9589 u0_a342       4 -16 8.4G 154M  73M S  1.0   2.7   0:18.70 com.instagram.a+
+ 5594 u0_a59       20   0  10G 283M 150M S  1.0   5.0  13:52.47 com.android.sys+
+ 4869 system       20   0 2.2G 2.3M 1.9M S  1.0   0.0   3:16.00 android.hardwar+
+32292 u0_a867      20   0 7.4G  72M  41M S  0.6   1.2   0:55.82 com.Slack
+ 2211 root         RT   0    0    0    0 S  0.6   0.0   0:32.27 [irq/165-119800+
+    8 root         20   0    0    0    0 I  0.6   0.0   2:16.42 [rcu_preempt]
+18835 root         20   0    0    0    0 I  0.3   0.0   0:00.28 [kworker/u16:1]
+17074 u0_a309      20   0 7.0G 222M 176M S  0.3   3.9   0:03.72 com.grofers.cus+
+12756 u0_a287      20   0 6.0G  37M 912K S  0.3   0.6   0:01.27 com.android.chr+
+32744 root          0 -20    0    0    0 I  0.3   0.0   0:00.58 [kworker/2:2H]
+15199 u0_a280      20   0 7.4G 114M  73M S  0.3   2.0   0:09.89 com.linkedin.an+
+^C181 root         20   0    0    0    0 I  0.3   0.0   0:09.91 [kworker/u16:13]
+C:\adb\platform-tools-latest-windows\platform-tools>adb shell dumpsys meminfo
+Applications Memory Usage (in Kilobytes):
+Uptime: 30208780 Realtime: 60447078
+
+
+Total RSS by process:
+    380,457K: system (pid 5093)
+    317,024K: com.android.systemui (pid 5594)
+    281,568K: com.sec.android.app.camera (pid 18588 / activities)
+    239,660K: com.grofers.customerapp (pid 17074)
+    234,980K: com.myairtelapp (pid 17072)
+    228,756K: com.snapwork.hdfc (pid 12742)
+    216,476K: com.sec.android.app.myfiles (pid 514 / activities)
+    194,048K: com.sec.android.gallery3d (pid 1155 / activities)
+    190,360K: com.google.android.apps.photos (pid 13093)
+    188,188K: com.microsoft.skydrive (pid 17075)
+    184,549K: com.sec.android.app.launcher (pid 5988 / activities)
+    166,184K: com.instagram.android (pid 9589)
+    157,964K: com.samsung.android.fmm (pid 18737)
+    156,692K: com.google.android.gms.persistent (pid 6187)
+    153,468K: com.samsung.android.dynamiclock (pid 15579)
+    137,812K: com.samsung.android.rubin.app (pid 9515)
+    130,380K: com.google.android.gms (pid 6730)
+    125,484K: com.linkedin.android (pid 15199)
+    122,572K: com.aura.oobe.samsung (pid 17374)
+    112,396K: com.android.settings (pid 5866 / activities)
+     97,864K: android:drmService (pid 13963)
+     91,468K: org.telegram.messenger (pid 12942)
+     90,920K: com.osp.app.signin (pid 14764)
+     83,408K: com.samsung.android.scloud (pid 12082)
+     83,276K: com.Slack (pid 32292)
+     81,088K: com.samsung.android.honeyboard (pid 8163)
+     81,028K: com.google.android.providers.media.module (pid 7752)
+     79,011K: surfaceflinger (pid 4935)
+     77,256K: com.samsung.android.provider.filterprovider (pid 18750)
+     74,980K: com.android.vending (pid 27140)
+     73,204K: com.android.phone (pid 5551)
+     72,928K: com.google.android.googlequicksearchbox:googleapp (pid 8312)
+     70,448K: com.sec.android.sdhms (pid 7801)
+     70,294K: com.samsung.adaptivebrightnessgo (pid 7125)
+     69,772K: android.process.media (pid 8963)
+     65,160K: com.android.bluetooth (pid 6371)
+     64,728K: com.samsung.android.scs (pid 28337)
+     61,424K: com.google.android.apps.turbo (pid 3291)
+     60,576K: com.samsung.android.incallui (pid 27341)
+     59,836K: com.sec.android.app.soundalive (pid 6407)
+     59,417K: android.hardware.graphics.composer@2.1-service (pid 4857)
+     57,416K: android.process.acore (pid 6284)
+     56,808K: com.google.android.googlequicksearchbox:interactor (pid 7763)
+     55,848K: com.sec.imsservice (pid 5851)
+     55,484K: com.google.android.projection.gearhead:car (pid 14441)
+     53,096K: .adservices (pid 25713)
+     52,572K: com.samsung.cmh:CMH (pid 3344)
+     51,840K: com.google.android.as (pid 7837)
+     50,408K: com.android.networkstack.process (pid 5584)
+     50,340K: com.sec.android.diagmonagent (pid 7785)
+     49,520K: com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 25592)
+     48,744K: com.google.android.ext.services (pid 5913)
+     48,464K: com.facebook.services (pid 12607)
+     46,652K: com.samsung.android.samsungpositioning (pid 10062)
+     42,880K: com.samsung.discover (pid 8538)
+     41,248K: com.google.process.gservices (pid 27190)
+     40,204K: com.google.android.permissioncontroller (pid 22558)
+     39,892K: com.sec.android.provider.badge (pid 28492)
+     39,608K: com.sec.phone (pid 25102)
+     38,812K: com.sec.location.nsflp2 (pid 6549)
+     38,232K: com.android.chrom (pid 12756)
+     37,272K: com.samsung.android.game.gamehome:notification (pid 10902)
+     36,528K: zygote64 (pid 4834)
+     36,440K: com.samsung.android.beaconmanager (pid 14821)
+     33,580K: com.sec.sve (pid 5837)
+     33,048K: com.android.se (pid 5856)
+     30,160K: webview_zygote (pid 5721)
+     20,168K: cameraserver (pid 5042)
+     13,068K: audioserver (pid 4912)
+     12,142K: vendor.samsung.hardware.camera.provider@4.0-service (pid 4884)
+     11,936K: logd (pid 4249)
+     11,764K: keystore2 (pid 4491)
+      8,672K: media.extractor (pid 5055)
+      7,244K: adbd (pid 6661)
+      7,088K: media.swcodec (pid 5092)
+      6,920K: mediaserver (pid 5066)
+      6,488K: vendor.samsung.hardware.biometrics.fingerprint@3.0-service (pid 5109)
+      5,692K: media.metrics (pid 5061)
+      5,056K: netd (pid 4833)
+      4,728K: rild (pid 5081)
+      4,568K: media.codec (pid 5077)
+      4,488K: dumpsys (pid 19032)
+      4,328K: storaged (pid 5074)
+      4,200K: android.hardware.keymaster@4.0-service (pid 4492)
+      4,192K: rild (pid 5082)
+      4,116K: servicemanager (pid 4251)
+      4,064K: hwservicemanager (pid 4252)
+      3,904K: init (pid 1)
+      3,884K: vold (pid 4305)
+      3,860K: lmkd (pid 4250)
+      3,684K: android.system.suspend@1.0-service (pid 4490)
+      3,660K: android.hardware.graphics.allocator@2.0-service (pid 4854)
+      3,648K: samsung.software.media.c2@1.0-service (pid 4881)
+      3,460K: ueventd (pid 3160)
+      3,448K: statsd (pid 4832)
+      3,408K: vendor.samsung.hardware.security.engmode@1.0-service (pid 4493)
+      3,312K: vndservicemanager (pid 4253)
+      3,240K: pageboostd (pid 6617)
+      3,216K: init (pid 3157)
+      3,164K: vendor.samsung.hardware.biometrics.face@2.0-service (pid 5108)
+      3,156K: zygote (pid 4835)
+      3,096K: multiclientd (pid 5319)
+      3,072K: vendor.samsung.hardware.hyper-service (pid 4878)
+      3,068K: vendor.samsung_slsi.hardware.ofi@1.0-service (pid 4905)
+      2,956K: installd (pid 5052)
+      2,944K: vaultkeeperd (pid 4510)
+      2,872K: vendor.samsung.hardware.security.vaultkeeper@2.0-service (pid 4511)
+      2,832K: vendor.samsung.hardware.thermal@1.0-service (pid 4893)
+      2,820K: vendor.samsung.hardware.security.hdcp.wifidisplay-service (pid 4494)
+      2,812K: android.hardware.audio.service (pid 4845)
+      2,796K: emservice (pid 4820)
+      2,780K: multiclientd (pid 5310)
+      2,728K: gpsd (pid 5080)
+      2,648K: tzdaemon (pid 4480)
+      2,632K: watchdogd (pid 4294)
+      2,580K: gpuservice (pid 4928)
+      2,564K: android.hardware.sensors@2.0-service.multihal (pid 4869)
+      2,556K: vendor.samsung.hardware.light-service (pid 4879)
+      2,540K: iod (pid 4453)
+      2,500K: android.hardware.health@2.1-service-samsung (pid 4861)
+      2,484K: android.hardware.power.samsung-service (pid 4880)
+      2,476K: android.hardware.memtrack@1.0-service (pid 4865)
+      2,436K: perfmond (pid 4933)
+      2,428K: storkd (pid 4512)
+      2,412K: vendor.samsung.hardware.gnss@2.0-service (pid 5083)
+      2,376K: android.hardware.usb@1.3-service.coral (pid 4870)
+      2,356K: android.hidl.allocator@1.0-service (pid 4844)
+      2,348K: vendor.samsung.hardware.vibrator@2.2-service (pid 4896)
+      2,288K: tzts_daemon (pid 4483)
+      2,288K: tombstoned (pid 4521)
+      2,288K: gatekeeperd (pid 5101)
+      2,180K: traced (pid 5030)
+      2,152K: vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service (pid 4901)
+      2,108K: wificond (pid 5076)
+      2,104K: dsms (pid 4937)
+      2,100K: credstore (pid 4918)
+      2,096K: android.hardware.bluetooth@1.0-service (pid 4846)
+      2,096K: vendor.samsung.hardware.miscpower@2.0-service (pid 4885)
+      2,080K: smdexe (pid 5046)
+      2,076K: android.hardware.wifi@1.0-service (pid 4871)
+      2,068K: ewlogd (pid 5027)
+      2,032K: vendor.samsung_slsi.hardware.epic@1.0-service (pid 4902)
+      2,004K: incidentd (pid 5045)
+      1,968K: perfsdkserver (pid 6608)
+      1,960K: speg_helper (pid 5072)
+      1,956K: connfwexe (pid 5050)
+      1,944K: imsd (pid 5044)
+      1,928K: vendor.samsung.hardware.security.drk@2.0-service (pid 4887)
+      1,924K: ip6tables-restore (pid 4842)
+      1,920K: spqr_service (pid 5073)
+      1,916K: iptables-restore (pid 4841)
+      1,908K: android.hardware.gatekeeper@1.0-service (pid 4850)
+      1,904K: android.hardware.power@1.0-service (pid 4866)
+      1,880K: auditd (pid 4813)
+      1,880K: android.hardware.drm@1.4-service.clearkey (pid 4849)
+      1,872K: cass (pid 4819)
+      1,856K: vendor.samsung.hardware.sysinput@1.2-service (pid 4888)
+      1,828K: ddexe (pid 5049)
+      1,820K: vendor.samsung.hardware.hqm@1.0-service (pid 5419)
+      1,812K: android.hardware.configstore@1.1-service (pid 4847)
+      1,808K: vendor.samsung.hardware.wifi@2.0-service (pid 4898)
+      1,712K: diagexe (pid 5048)
+      1,612K: argosd (pid 5078)
+      1,564K: wlbtd (pid 5089)
+      1,556K: cbd (pid 5079)
+      1,540K: traced_probes (pid 5029)
+      1,180K: android.hardware.drm@1.3-service.widevine (pid 4848)
+      1,104K: drmserver (pid 5026)
+
+Total RSS by OOM adjustment:
+    591,738K: Native
+         79,011K: surfaceflinger (pid 4935)
+         59,417K: android.hardware.graphics.composer@2.1-service (pid 4857)
+         38,232K: com.android.chrom (pid 12756)
+         36,528K: zygote64 (pid 4834)
+         30,160K: webview_zygote (pid 5721)
+         20,168K: cameraserver (pid 5042)
+         13,068K: audioserver (pid 4912)
+         12,142K: vendor.samsung.hardware.camera.provider@4.0-service (pid 4884)
+         11,936K: logd (pid 4249)
+         11,764K: keystore2 (pid 4491)
+          8,672K: media.extractor (pid 5055)
+          7,244K: adbd (pid 6661)
+          7,088K: media.swcodec (pid 5092)
+          6,920K: mediaserver (pid 5066)
+          6,488K: vendor.samsung.hardware.biometrics.fingerprint@3.0-service (pid 5109)
+          5,692K: media.metrics (pid 5061)
+          5,056K: netd (pid 4833)
+          4,728K: rild (pid 5081)
+          4,568K: media.codec (pid 5077)
+          4,488K: dumpsys (pid 19032)
+          4,328K: storaged (pid 5074)
+          4,200K: android.hardware.keymaster@4.0-service (pid 4492)
+          4,192K: rild (pid 5082)
+          4,116K: servicemanager (pid 4251)
+          4,064K: hwservicemanager (pid 4252)
+          3,904K: init (pid 1)
+          3,884K: vold (pid 4305)
+          3,860K: lmkd (pid 4250)
+          3,684K: android.system.suspend@1.0-service (pid 4490)
+          3,660K: android.hardware.graphics.allocator@2.0-service (pid 4854)
+          3,648K: samsung.software.media.c2@1.0-service (pid 4881)
+          3,460K: ueventd (pid 3160)
+          3,448K: statsd (pid 4832)
+          3,408K: vendor.samsung.hardware.security.engmode@1.0-service (pid 4493)
+          3,312K: vndservicemanager (pid 4253)
+          3,240K: pageboostd (pid 6617)
+          3,216K: init (pid 3157)
+          3,164K: vendor.samsung.hardware.biometrics.face@2.0-service (pid 5108)
+          3,156K: zygote (pid 4835)
+          3,096K: multiclientd (pid 5319)
+          3,072K: vendor.samsung.hardware.hyper-service (pid 4878)
+          3,068K: vendor.samsung_slsi.hardware.ofi@1.0-service (pid 4905)
+          2,956K: installd (pid 5052)
+          2,944K: vaultkeeperd (pid 4510)
+          2,872K: vendor.samsung.hardware.security.vaultkeeper@2.0-service (pid 4511)
+          2,832K: vendor.samsung.hardware.thermal@1.0-service (pid 4893)
+          2,820K: vendor.samsung.hardware.security.hdcp.wifidisplay-service (pid 4494)
+          2,812K: android.hardware.audio.service (pid 4845)
+          2,796K: emservice (pid 4820)
+          2,780K: multiclientd (pid 5310)
+          2,728K: gpsd (pid 5080)
+          2,648K: tzdaemon (pid 4480)
+          2,632K: watchdogd (pid 4294)
+          2,580K: gpuservice (pid 4928)
+          2,564K: android.hardware.sensors@2.0-service.multihal (pid 4869)
+          2,556K: vendor.samsung.hardware.light-service (pid 4879)
+          2,540K: iod (pid 4453)
+          2,500K: android.hardware.health@2.1-service-samsung (pid 4861)
+          2,484K: android.hardware.power.samsung-service (pid 4880)
+          2,476K: android.hardware.memtrack@1.0-service (pid 4865)
+          2,436K: perfmond (pid 4933)
+          2,428K: storkd (pid 4512)
+          2,412K: vendor.samsung.hardware.gnss@2.0-service (pid 5083)
+          2,376K: android.hardware.usb@1.3-service.coral (pid 4870)
+          2,356K: android.hidl.allocator@1.0-service (pid 4844)
+          2,348K: vendor.samsung.hardware.vibrator@2.2-service (pid 4896)
+          2,288K: tzts_daemon (pid 4483)
+          2,288K: tombstoned (pid 4521)
+          2,288K: gatekeeperd (pid 5101)
+          2,180K: traced (pid 5030)
+          2,152K: vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service (pid 4901)
+          2,108K: wificond (pid 5076)
+          2,104K: dsms (pid 4937)
+          2,100K: credstore (pid 4918)
+          2,096K: android.hardware.bluetooth@1.0-service (pid 4846)
+          2,096K: vendor.samsung.hardware.miscpower@2.0-service (pid 4885)
+          2,080K: smdexe (pid 5046)
+          2,076K: android.hardware.wifi@1.0-service (pid 4871)
+          2,068K: ewlogd (pid 5027)
+          2,032K: vendor.samsung_slsi.hardware.epic@1.0-service (pid 4902)
+          2,004K: incidentd (pid 5045)
+          1,968K: perfsdkserver (pid 6608)
+          1,960K: speg_helper (pid 5072)
+          1,956K: connfwexe (pid 5050)
+          1,944K: imsd (pid 5044)
+          1,928K: vendor.samsung.hardware.security.drk@2.0-service (pid 4887)
+          1,924K: ip6tables-restore (pid 4842)
+          1,920K: spqr_service (pid 5073)
+          1,916K: iptables-restore (pid 4841)
+          1,908K: android.hardware.gatekeeper@1.0-service (pid 4850)
+          1,904K: android.hardware.power@1.0-service (pid 4866)
+          1,880K: auditd (pid 4813)
+          1,880K: android.hardware.drm@1.4-service.clearkey (pid 4849)
+          1,872K: cass (pid 4819)
+          1,856K: vendor.samsung.hardware.sysinput@1.2-service (pid 4888)
+          1,828K: ddexe (pid 5049)
+          1,820K: vendor.samsung.hardware.hqm@1.0-service (pid 5419)
+          1,812K: android.hardware.configstore@1.1-service (pid 4847)
+          1,808K: vendor.samsung.hardware.wifi@2.0-service (pid 4898)
+          1,712K: diagexe (pid 5048)
+          1,612K: argosd (pid 5078)
+          1,564K: wlbtd (pid 5089)
+          1,556K: cbd (pid 5079)
+          1,540K: traced_probes (pid 5029)
+          1,180K: android.hardware.drm@1.3-service.widevine (pid 4848)
+          1,104K: drmserver (pid 5026)
+    380,457K: System
+        380,457K: system (pid 5093)
+    683,900K: Persistent
+        317,024K: com.android.systemui (pid 5594)
+         73,204K: com.android.phone (pid 5551)
+         70,448K: com.sec.android.sdhms (pid 7801)
+         55,848K: com.sec.imsservice (pid 5851)
+         50,408K: com.android.networkstack.process (pid 5584)
+         50,340K: com.sec.android.diagmonagent (pid 7785)
+         33,580K: com.sec.sve (pid 5837)
+         33,048K: com.android.se (pid 5856)
+    146,188K: Persistent Service
+         81,028K: com.google.android.providers.media.module (pid 7752)
+         65,160K: com.android.bluetooth (pid 6371)
+    184,549K: Foreground
+        184,549K: com.sec.android.app.launcher (pid 5988 / activities)
+    466,070K: Visible
+        156,692K: com.google.android.gms.persistent (pid 6187)
+         70,294K: com.samsung.adaptivebrightnessgo (pid 7125)
+         56,808K: com.google.android.googlequicksearchbox:interactor (pid 7763)
+         51,840K: com.google.android.as (pid 7837)
+         48,744K: com.google.android.ext.services (pid 5913)
+         42,880K: com.samsung.discover (pid 8538)
+         38,812K: com.sec.location.nsflp2 (pid 6549)
+    117,528K: Perceptible
+         81,088K: com.samsung.android.honeyboard (pid 8163)
+         36,440K: com.samsung.android.beaconmanager (pid 14821)
+     37,272K: Perceptible Medium
+         37,272K: com.samsung.android.game.gamehome:notification (pid 10902)
+    254,236K: A Services
+        137,812K: com.samsung.android.rubin.app (pid 9515)
+         69,772K: android.process.media (pid 8963)
+         46,652K: com.samsung.android.samsungpositioning (pid 10062)
+    281,568K: Previous
+        281,568K: com.sec.android.app.camera (pid 18588 / activities)
+    304,292K: B Services
+        157,964K: com.samsung.android.fmm (pid 18737)
+         97,864K: android:drmService (pid 13963)
+         48,464K: com.facebook.services (pid 12607)
+    597,328K: Picked
+        166,184K: com.instagram.android (pid 9589)
+        125,484K: com.linkedin.android (pid 15199)
+        112,396K: com.android.settings (pid 5866 / activities)
+         83,276K: com.Slack (pid 32292)
+         57,416K: android.process.acore (pid 6284)
+         52,572K: com.samsung.cmh:CMH (pid 3344)
+  2,955,464K: Cached
+        239,660K: com.grofers.customerapp (pid 17074)
+        234,980K: com.myairtelapp (pid 17072)
+        228,756K: com.snapwork.hdfc (pid 12742)
+        216,476K: com.sec.android.app.myfiles (pid 514 / activities)
+        194,048K: com.sec.android.gallery3d (pid 1155 / activities)
+        190,360K: com.google.android.apps.photos (pid 13093)
+        188,188K: com.microsoft.skydrive (pid 17075)
+        153,468K: com.samsung.android.dynamiclock (pid 15579)
+        130,380K: com.google.android.gms (pid 6730)
+        122,572K: com.aura.oobe.samsung (pid 17374)
+         91,468K: org.telegram.messenger (pid 12942)
+         90,920K: com.osp.app.signin (pid 14764)
+         83,408K: com.samsung.android.scloud (pid 12082)
+         77,256K: com.samsung.android.provider.filterprovider (pid 18750)
+         74,980K: com.android.vending (pid 27140)
+         72,928K: com.google.android.googlequicksearchbox:googleapp (pid 8312)
+         64,728K: com.samsung.android.scs (pid 28337)
+         61,424K: com.google.android.apps.turbo (pid 3291)
+         60,576K: com.samsung.android.incallui (pid 27341)
+         59,836K: com.sec.android.app.soundalive (pid 6407)
+         55,484K: com.google.android.projection.gearhead:car (pid 14441)
+         53,096K: .adservices (pid 25713)
+         49,520K: com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 25592)
+         41,248K: com.google.process.gservices (pid 27190)
+         40,204K: com.google.android.permissioncontroller (pid 22558)
+         39,892K: com.sec.android.provider.badge (pid 28492)
+         39,608K: com.sec.phone (pid 25102)
+
+Total RSS by category:
+  1,267,432K: .so mmap
+  1,178,680K: .art mmap
+    854,128K: .apk mmap
+    783,716K: Native
+    775,304K: .jar mmap
+    604,452K: .oat mmap
+    549,456K: Dalvik
+    194,432K: GL mtrack
+    165,938K: EGL mtrack
+    164,680K: Dalvik Other
+    151,088K: .dex mmap
+     87,328K: Other mmap
+     63,408K: Unknown
+     49,336K: Other dev
+     47,068K: Stack
+     32,888K: Other mtrack
+     28,876K: Ashmem
+      1,584K: .ttf mmap
+        796K: Cursor
+          0K: Gfx dev
+
+Total PSS by process:
+    350,240K: system (pid 5093)
+    313,554K: com.android.systemui (pid 5594)
+    197,077K: com.sec.android.app.myfiles (pid 514 / activities)
+    191,779K: com.sec.android.app.launcher (pid 5988 / activities)
+    182,800K: com.android.settings (pid 5866 / activities)
+    168,723K: com.sec.android.app.camera (pid 18588 / activities)
+    121,939K: com.samsung.android.honeyboard (pid 8163)
+    106,769K: com.snapwork.hdfc (pid 12742)
+     98,896K: com.google.android.gms.persistent (pid 6187)
+     98,031K: com.grofers.customerapp (pid 17074)
+     96,505K: com.microsoft.skydrive (pid 17075)
+     94,015K: com.instagram.android (pid 9589)
+     93,403K: com.myairtelapp (pid 17072)
+     92,088K: com.google.android.gms (pid 6730)
+     91,146K: surfaceflinger (pid 4935)
+     88,168K: com.android.vending (pid 27140)
+     81,881K: com.sec.android.gallery3d (pid 1155 / activities)
+     75,736K: com.google.android.apps.photos (pid 13093)
+     70,709K: com.linkedin.android (pid 15199)
+     60,549K: com.google.android.googlequicksearchbox:googleapp (pid 8312)
+     59,639K: android.hardware.graphics.composer@2.1-service (pid 4857)
+     44,622K: com.sec.imsservice (pid 5851)
+     43,541K: org.telegram.messenger (pid 12942)
+     43,393K: com.Slack (pid 32292)
+     41,274K: zygote (pid 4835)
+     40,886K: com.samsung.adaptivebrightnessgo (pid 7125)
+     38,498K: com.google.android.googlequicksearchbox:interactor (pid 7763)
+     37,989K: com.google.android.providers.media.module (pid 7752)
+     36,488K: com.android.bluetooth (pid 6371)
+     36,376K: com.aura.oobe.samsung (pid 17374)
+     35,977K: com.samsung.android.incallui (pid 27341)
+     35,244K: com.osp.app.signin (pid 14764)
+     35,193K: com.android.phone (pid 5551)
+     34,520K: com.samsung.android.rubin.app (pid 9515)
+     32,501K: android.process.acore (pid 6284)
+     30,197K: android.process.media (pid 8963)
+     29,726K: com.samsung.android.fmm (pid 18737)
+     27,384K: com.sec.android.sdhms (pid 7801)
+     27,320K: com.samsung.android.dynamiclock (pid 15579)
+     24,207K: audioserver (pid 4912)
+     23,663K: com.google.android.ext.services (pid 5913)
+     22,081K: com.samsung.android.scs (pid 28337)
+     21,670K: com.samsung.android.scloud (pid 12082)
+     20,502K: cameraserver (pid 5042)
+     16,619K: com.facebook.services (pid 12607)
+     16,377K: com.samsung.cmh:CMH (pid 3344)
+     16,069K: com.samsung.discover (pid 8538)
+     15,451K: com.android.networkstack.process (pid 5584)
+     15,320K: com.google.android.as (pid 7837)
+     14,916K: com.sec.android.diagmonagent (pid 7785)
+     13,972K: com.android.chrom (pid 12756)
+     13,422K: com.google.android.projection.gearhead:car (pid 14441)
+     13,284K: vendor.samsung.hardware.camera.provider@4.0-service (pid 4884)
+     12,284K: keystore2 (pid 4491)
+     11,931K: logd (pid 4249)
+     11,929K: com.sec.location.nsflp2 (pid 6549)
+     11,801K: com.google.android.permissioncontroller (pid 22558)
+     11,420K: mediaserver (pid 5066)
+     10,985K: com.samsung.android.samsungpositioning (pid 10062)
+     10,401K: com.samsung.android.provider.filterprovider (pid 18750)
+     10,108K: android:drmService (pid 13963)
+      9,933K: media.extractor (pid 5055)
+      9,046K: rild (pid 5081)
+      8,514K: com.samsung.android.game.gamehome:notification (pid 10902)
+      8,476K: media.metrics (pid 5061)
+      7,938K: media.swcodec (pid 5092)
+      7,919K: com.sec.android.provider.badge (pid 28492)
+      7,798K: com.sec.phone (pid 25102)
+      7,744K: com.samsung.android.beaconmanager (pid 14821)
+      7,707K: .adservices (pid 25713)
+      7,633K: com.google.process.gservices (pid 27190)
+      7,385K: com.google.android.apps.turbo (pid 3291)
+      7,236K: vendor.samsung.hardware.biometrics.face@2.0-service (pid 5108)
+      6,939K: vendor.samsung.hardware.biometrics.fingerprint@3.0-service (pid 5109)
+      6,080K: adbd (pid 6661)
+      5,984K: com.sec.android.app.soundalive (pid 6407)
+      5,729K: rild (pid 5082)
+      5,689K: init (pid 1)
+      5,579K: com.sec.sve (pid 5837)
+      5,525K: com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 25592)
+      5,325K: android.hardware.audio.service (pid 4845)
+      5,203K: media.codec (pid 5077)
+      4,896K: com.android.se (pid 5856)
+      4,081K: samsung.software.media.c2@1.0-service (pid 4881)
+      4,046K: netd (pid 4833)
+      3,205K: webview_zygote (pid 5721)
+      3,097K: gpsd (pid 5080)
+      2,879K: vold (pid 4305)
+      2,810K: storaged (pid 5074)
+      2,735K: init (pid 3157)
+      2,705K: statsd (pid 4832)
+      2,694K: zygote64 (pid 4834)
+      2,564K: drmserver (pid 5026)
+      2,524K: ueventd (pid 3160)
+      2,471K: installd (pid 5052)
+      2,463K: android.hardware.graphics.allocator@2.0-service (pid 4854)
+      2,381K: android.hardware.keymaster@4.0-service (pid 4492)
+      2,140K: vendor.samsung.hardware.gnss@2.0-service (pid 5083)
+      2,115K: android.hardware.drm@1.3-service.widevine (pid 4848)
+      1,936K: android.hardware.sensors@2.0-service.multihal (pid 4869)
+      1,889K: pageboostd (pid 6617)
+      1,771K: gpuservice (pid 4928)
+      1,711K: servicemanager (pid 4251)
+      1,684K: vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service (pid 4901)
+      1,637K: emservice (pid 4820)
+      1,629K: vendor.samsung.hardware.hyper-service (pid 4878)
+      1,573K: vendor.samsung_slsi.hardware.ofi@1.0-service (pid 4905)
+      1,471K: vendor.samsung.hardware.thermal@1.0-service (pid 4893)
+      1,454K: hwservicemanager (pid 4252)
+      1,368K: vendor.samsung.hardware.security.engmode@1.0-service (pid 4493)
+      1,326K: multiclientd (pid 5319)
+      1,252K: android.hardware.drm@1.4-service.clearkey (pid 4849)
+      1,249K: android.hardware.health@2.1-service-samsung (pid 4861)
+      1,244K: android.system.suspend@1.0-service (pid 4490)
+      1,239K: traced (pid 5030)
+      1,229K: vndservicemanager (pid 4253)
+      1,228K: android.hardware.wifi@1.0-service (pid 4871)
+      1,212K: cass (pid 4819)
+      1,163K: multiclientd (pid 5310)
+      1,155K: vaultkeeperd (pid 4510)
+      1,152K: vendor.samsung.hardware.security.drk@2.0-service (pid 4887)
+      1,146K: vendor.samsung.hardware.vibrator@2.2-service (pid 4896)
+      1,145K: wificond (pid 5076)
+      1,124K: vendor.samsung.hardware.wifi@2.0-service (pid 4898)
+      1,101K: credstore (pid 4918)
+      1,094K: gatekeeperd (pid 5101)
+      1,086K: dumpsys (pid 19032)
+      1,085K: android.hardware.power.samsung-service (pid 4880)
+      1,079K: incidentd (pid 5045)
+      1,076K: android.hardware.bluetooth@1.0-service (pid 4846)
+      1,064K: android.hardware.memtrack@1.0-service (pid 4865)
+      1,059K: smdexe (pid 5046)
+      1,038K: android.hardware.usb@1.3-service.coral (pid 4870)
+      1,036K: perfmond (pid 4933)
+        994K: tzdaemon (pid 4480)
+        994K: perfsdkserver (pid 6608)
+        992K: android.hardware.configstore@1.1-service (pid 4847)
+        979K: vendor.samsung.hardware.security.vaultkeeper@2.0-service (pid 4511)
+        956K: connfwexe (pid 5050)
+        954K: vendor.samsung.hardware.light-service (pid 4879)
+        935K: vendor.samsung.hardware.security.hdcp.wifidisplay-service (pid 4494)
+        927K: lmkd (pid 4250)
+        924K: vendor.samsung_slsi.hardware.epic@1.0-service (pid 4902)
+        916K: vendor.samsung.hardware.hqm@1.0-service (pid 5419)
+        891K: ip6tables-restore (pid 4842)
+        876K: android.hardware.gatekeeper@1.0-service (pid 4850)
+        867K: iptables-restore (pid 4841)
+        865K: ddexe (pid 5049)
+        862K: tzts_daemon (pid 4483)
+        856K: vendor.samsung.hardware.miscpower@2.0-service (pid 4885)
+        848K: vendor.samsung.hardware.sysinput@1.2-service (pid 4888)
+        835K: imsd (pid 5044)
+        834K: ewlogd (pid 5027)
+        824K: android.hardware.power@1.0-service (pid 4866)
+        817K: dsms (pid 4937)
+        811K: traced_probes (pid 5029)
+        807K: android.hidl.allocator@1.0-service (pid 4844)
+        805K: auditd (pid 4813)
+        781K: diagexe (pid 5048)
+        743K: speg_helper (pid 5072)
+        726K: spqr_service (pid 5073)
+        698K: cbd (pid 5079)
+        695K: iod (pid 4453)
+        658K: wlbtd (pid 5089)
+        646K: argosd (pid 5078)
+        639K: storkd (pid 4512)
+        630K: tombstoned (pid 4521)
+        611K: watchdogd (pid 4294)
+
+Total PSS by OOM adjustment:
+    496,064K: Native
+         91,146K: surfaceflinger (pid 4935)
+         59,639K: android.hardware.graphics.composer@2.1-service (pid 4857)
+         41,274K: zygote (pid 4835)
+         24,207K: audioserver (pid 4912)
+         20,502K: cameraserver (pid 5042)
+         13,972K: com.android.chrom (pid 12756)
+         13,284K: vendor.samsung.hardware.camera.provider@4.0-service (pid 4884)
+         12,284K: keystore2 (pid 4491)
+         11,931K: logd (pid 4249)
+         11,420K: mediaserver (pid 5066)
+          9,933K: media.extractor (pid 5055)
+          9,046K: rild (pid 5081)
+          8,476K: media.metrics (pid 5061)
+          7,938K: media.swcodec (pid 5092)
+          7,236K: vendor.samsung.hardware.biometrics.face@2.0-service (pid 5108)
+          6,939K: vendor.samsung.hardware.biometrics.fingerprint@3.0-service (pid 5109)
+          6,080K: adbd (pid 6661)
+          5,729K: rild (pid 5082)
+          5,689K: init (pid 1)
+          5,325K: android.hardware.audio.service (pid 4845)
+          5,203K: media.codec (pid 5077)
+          4,081K: samsung.software.media.c2@1.0-service (pid 4881)
+          4,046K: netd (pid 4833)
+          3,205K: webview_zygote (pid 5721)
+          3,097K: gpsd (pid 5080)
+          2,879K: vold (pid 4305)
+          2,810K: storaged (pid 5074)
+          2,735K: init (pid 3157)
+          2,705K: statsd (pid 4832)
+          2,694K: zygote64 (pid 4834)
+          2,564K: drmserver (pid 5026)
+          2,524K: ueventd (pid 3160)
+          2,471K: installd (pid 5052)
+          2,463K: android.hardware.graphics.allocator@2.0-service (pid 4854)
+          2,381K: android.hardware.keymaster@4.0-service (pid 4492)
+          2,140K: vendor.samsung.hardware.gnss@2.0-service (pid 5083)
+          2,115K: android.hardware.drm@1.3-service.widevine (pid 4848)
+          1,936K: android.hardware.sensors@2.0-service.multihal (pid 4869)
+          1,889K: pageboostd (pid 6617)
+          1,771K: gpuservice (pid 4928)
+          1,711K: servicemanager (pid 4251)
+          1,684K: vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service (pid 4901)
+          1,637K: emservice (pid 4820)
+          1,629K: vendor.samsung.hardware.hyper-service (pid 4878)
+          1,573K: vendor.samsung_slsi.hardware.ofi@1.0-service (pid 4905)
+          1,471K: vendor.samsung.hardware.thermal@1.0-service (pid 4893)
+          1,454K: hwservicemanager (pid 4252)
+          1,368K: vendor.samsung.hardware.security.engmode@1.0-service (pid 4493)
+          1,326K: multiclientd (pid 5319)
+          1,252K: android.hardware.drm@1.4-service.clearkey (pid 4849)
+          1,249K: android.hardware.health@2.1-service-samsung (pid 4861)
+          1,244K: android.system.suspend@1.0-service (pid 4490)
+          1,239K: traced (pid 5030)
+          1,229K: vndservicemanager (pid 4253)
+          1,228K: android.hardware.wifi@1.0-service (pid 4871)
+          1,212K: cass (pid 4819)
+          1,163K: multiclientd (pid 5310)
+          1,155K: vaultkeeperd (pid 4510)
+          1,152K: vendor.samsung.hardware.security.drk@2.0-service (pid 4887)
+          1,146K: vendor.samsung.hardware.vibrator@2.2-service (pid 4896)
+          1,145K: wificond (pid 5076)
+          1,124K: vendor.samsung.hardware.wifi@2.0-service (pid 4898)
+          1,101K: credstore (pid 4918)
+          1,094K: gatekeeperd (pid 5101)
+          1,086K: dumpsys (pid 19032)
+          1,085K: android.hardware.power.samsung-service (pid 4880)
+          1,079K: incidentd (pid 5045)
+          1,076K: android.hardware.bluetooth@1.0-service (pid 4846)
+          1,064K: android.hardware.memtrack@1.0-service (pid 4865)
+          1,059K: smdexe (pid 5046)
+          1,038K: android.hardware.usb@1.3-service.coral (pid 4870)
+          1,036K: perfmond (pid 4933)
+            994K: tzdaemon (pid 4480)
+            994K: perfsdkserver (pid 6608)
+            992K: android.hardware.configstore@1.1-service (pid 4847)
+            979K: vendor.samsung.hardware.security.vaultkeeper@2.0-service (pid 4511)
+            956K: connfwexe (pid 5050)
+            954K: vendor.samsung.hardware.light-service (pid 4879)
+            935K: vendor.samsung.hardware.security.hdcp.wifidisplay-service (pid 4494)
+            927K: lmkd (pid 4250)
+            924K: vendor.samsung_slsi.hardware.epic@1.0-service (pid 4902)
+            916K: vendor.samsung.hardware.hqm@1.0-service (pid 5419)
+            891K: ip6tables-restore (pid 4842)
+            876K: android.hardware.gatekeeper@1.0-service (pid 4850)
+            867K: iptables-restore (pid 4841)
+            865K: ddexe (pid 5049)
+            862K: tzts_daemon (pid 4483)
+            856K: vendor.samsung.hardware.miscpower@2.0-service (pid 4885)
+            848K: vendor.samsung.hardware.sysinput@1.2-service (pid 4888)
+            835K: imsd (pid 5044)
+            834K: ewlogd (pid 5027)
+            824K: android.hardware.power@1.0-service (pid 4866)
+            817K: dsms (pid 4937)
+            811K: traced_probes (pid 5029)
+            807K: android.hidl.allocator@1.0-service (pid 4844)
+            805K: auditd (pid 4813)
+            781K: diagexe (pid 5048)
+            743K: speg_helper (pid 5072)
+            726K: spqr_service (pid 5073)
+            698K: cbd (pid 5079)
+            695K: iod (pid 4453)
+            658K: wlbtd (pid 5089)
+            646K: argosd (pid 5078)
+            639K: storkd (pid 4512)
+            630K: tombstoned (pid 4521)
+            611K: watchdogd (pid 4294)
+    350,240K: System
+        350,240K: system (pid 5093)
+    461,595K: Persistent
+        313,554K: com.android.systemui (pid 5594)
+         44,622K: com.sec.imsservice (pid 5851)
+         35,193K: com.android.phone (pid 5551)
+         27,384K: com.sec.android.sdhms (pid 7801)
+         15,451K: com.android.networkstack.process (pid 5584)
+         14,916K: com.sec.android.diagmonagent (pid 7785)
+          5,579K: com.sec.sve (pid 5837)
+          4,896K: com.android.se (pid 5856)
+     74,477K: Persistent Service
+         37,989K: com.google.android.providers.media.module (pid 7752)
+         36,488K: com.android.bluetooth (pid 6371)
+    191,779K: Foreground
+        191,779K: com.sec.android.app.launcher (pid 5988 / activities)
+    245,261K: Visible
+         98,896K: com.google.android.gms.persistent (pid 6187)
+         40,886K: com.samsung.adaptivebrightnessgo (pid 7125)
+         38,498K: com.google.android.googlequicksearchbox:interactor (pid 7763)
+         23,663K: com.google.android.ext.services (pid 5913)
+         16,069K: com.samsung.discover (pid 8538)
+         15,320K: com.google.android.as (pid 7837)
+         11,929K: com.sec.location.nsflp2 (pid 6549)
+    129,683K: Perceptible
+        121,939K: com.samsung.android.honeyboard (pid 8163)
+          7,744K: com.samsung.android.beaconmanager (pid 14821)
+      8,514K: Perceptible Medium
+          8,514K: com.samsung.android.game.gamehome:notification (pid 10902)
+     75,702K: A Services
+         34,520K: com.samsung.android.rubin.app (pid 9515)
+         30,197K: android.process.media (pid 8963)
+         10,985K: com.samsung.android.samsungpositioning (pid 10062)
+    168,723K: Previous
+        168,723K: com.sec.android.app.camera (pid 18588 / activities)
+     56,453K: B Services
+         29,726K: com.samsung.android.fmm (pid 18737)
+         16,619K: com.facebook.services (pid 12607)
+         10,108K: android:drmService (pid 13963)
+    439,795K: Picked
+        182,800K: com.android.settings (pid 5866 / activities)
+         94,015K: com.instagram.android (pid 9589)
+         70,709K: com.linkedin.android (pid 15199)
+         43,393K: com.Slack (pid 32292)
+         32,501K: android.process.acore (pid 6284)
+         16,377K: com.samsung.cmh:CMH (pid 3344)
+  1,297,991K: Cached
+        197,077K: com.sec.android.app.myfiles (pid 514 / activities)
+        106,769K: com.snapwork.hdfc (pid 12742)
+         98,031K: com.grofers.customerapp (pid 17074)
+         96,505K: com.microsoft.skydrive (pid 17075)
+         93,403K: com.myairtelapp (pid 17072)
+         92,088K: com.google.android.gms (pid 6730)
+         88,168K: com.android.vending (pid 27140)
+         81,881K: com.sec.android.gallery3d (pid 1155 / activities)
+         75,736K: com.google.android.apps.photos (pid 13093)
+         60,549K: com.google.android.googlequicksearchbox:googleapp (pid 8312)
+         43,541K: org.telegram.messenger (pid 12942)
+         36,376K: com.aura.oobe.samsung (pid 17374)
+         35,977K: com.samsung.android.incallui (pid 27341)
+         35,244K: com.osp.app.signin (pid 14764)
+         27,320K: com.samsung.android.dynamiclock (pid 15579)
+         22,081K: com.samsung.android.scs (pid 28337)
+         21,670K: com.samsung.android.scloud (pid 12082)
+         13,422K: com.google.android.projection.gearhead:car (pid 14441)
+         11,801K: com.google.android.permissioncontroller (pid 22558)
+         10,401K: com.samsung.android.provider.filterprovider (pid 18750)
+          7,919K: com.sec.android.provider.badge (pid 28492)
+          7,798K: com.sec.phone (pid 25102)
+          7,707K: .adservices (pid 25713)
+          7,633K: com.google.process.gservices (pid 27190)
+          7,385K: com.google.android.apps.turbo (pid 3291)
+          5,984K: com.sec.android.app.soundalive (pid 6407)
+          5,525K: com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 25592)
+
+Total PSS by category:
+    713,053K: Native
+    494,792K: Dalvik
+    397,982K: .apk mmap
+    194,432K: GL mtrack
+    168,896K: .so mmap
+    165,938K: EGL mtrack
+    128,703K: .dex mmap
+    127,049K: Dalvik Other
+    113,470K: .art mmap
+     62,179K: .jar mmap
+     46,492K: Stack
+     38,961K: Unknown
+     32,888K: Other mtrack
+     21,684K: Other mmap
+     21,125K: .oat mmap
+      4,964K: Ashmem
+      3,592K: Other dev
+      1,456K: .ttf mmap
+        604K: Cursor
+          0K: Gfx dev
+
+Total RAM: 5,706,212K (status normal)
+ Free RAM: 3,054,607K (1,297,991K cached pss + 1,450,936K cached kernel +   305,680K free)
+ Used RAM: 3,243,130K (2,698,286K used pss +   544,844K kernel)
+ Lost RAM:   410,512K
+     ZRAM:   255,980K physical used for 1,369,340K in swap (4,194,300K total swap)
+   Tuning: 256 (large 512), oom   204,721K, restore limit    68,240K (high-end-gfx)
+
+C:\adb\platform-tools-latest-windows\platform-tools>adb shell dumpsys cpuinfo
+Load: 21.15 / 20.9 / 19.81
+CPU usage from 59148ms to 18766ms ago (2025-07-28 23:46:35.106 to 2025-07-28 23:47:15.489):
+  126% 12742/com.snapwork.hdfc: 104% user + 21% kernel / faults: 111500 minor 2 major
+  76% 7752/com.google.android.providers.media.module: 42% user + 34% kernel / faults: 33144 minor 1 major
+  30% 5093/system_server: 16% user + 13% kernel / faults: 7063 minor 303 major
+  4.4% 5594/com.android.systemui: 2.7% user + 1.6% kernel / faults: 6323 minor 3278 major
+  4.3% 2111/sugov:0: 0% user + 4.3% kernel
+  2.8% 4865/android.hardware.memtrack@1.0-service: 1.9% user + 0.8% kernel / faults: 27662 minor
+  2.3% 2112/sugov:4: 0% user + 2.3% kernel
+  2.1% 4832/statsd: 0.8% user + 1.2% kernel / faults: 5 minor
+  1.1% 16093/kworker/0:1H: 0% user + 1.1% kernel
+  1% 3344/com.samsung.cmh:CMH: 0.5% user + 0.4% kernel / faults: 390 minor 3 major
+  0.9% 4869/android.hardware.sensors@2.0-service.multihal: 0.1% user + 0.7% kernel / faults: 1 minor 2 major
+  0.8% 4912/audioserver: 0.6% user + 0.1% kernel / faults: 18 minor 1 major
+  0.8% 32292/com.Slack: 0.5% user + 0.2% kernel / faults: 272 minor 10 major
+  0.7% 4935/surfaceflinger: 0.3% user + 0.3% kernel / faults: 23 minor 7 major
+  0.6% 9589/com.instagram.android: 0.4% user + 0.2% kernel / faults: 277 minor 1 major
+  0.6% 8/rcu_preempt: 0% user + 0.6% kernel
+  0.6% 4845/android.hardware.audio.service: 0.1% user + 0.4% kernel / faults: 1 major
+  0.5% 2211/irq/165-1198000: 0% user + 0.5% kernel
+  0.5% 18835/kworker/u16:1: 0% user + 0.5% kernel / faults: 11 minor
+  0.5% 3160/ueventd: 0.4% user + 0% kernel / faults: 22 minor
+  0.4% 8181/kworker/u16:13: 0% user + 0.4% kernel / faults: 6 minor
+  0.4% 6371/com.android.bluetooth: 0.1% user + 0.2% kernel / faults: 3951 minor 1067 major
+  0.4% 4249/logd: 0.1% user + 0.2% kernel / faults: 124 minor 1 major
+  0.4% 17074/com.grofers.customerapp: 0.1% user + 0.2% kernel / faults: 78 minor
+  0.3% 5551/com.android.phone: 0.2% user + 0.1% kernel / faults: 503 minor 39 major
+  0.3% 7785/com.sec.android.diagmonagent: 0.1% user + 0.1% kernel / faults: 2708 minor 132 major
+  0.3% 9515/com.samsung.android.rubin.app: 0.2% user + 0% kernel / faults: 969 minor 19 major
+  0.3% 7801/com.sec.android.sdhms: 0.1% user + 0.1% kernel / faults: 339 minor 28 major
+  0.2% 4857/android.hardware.graphics.composer@2.1-service: 0% user + 0.2% kernel / faults: 1 minor 3 major
+  0.2% 5109/vendor.samsung.hardware.biometrics.fingerprint@3.0-service: 0% user + 0.2% kernel / faults: 1 minor 2 major
+  0.2% 6187/com.google.android.gms.persistent: 0.1% user + 0.1% kernel / faults: 956 minor 125 major
+  0.2% 4491/keystore2: 0% user + 0.1% kernel / faults: 483 minor 423 major
+  0.1% 1/init: 0% user + 0.1% kernel / faults: 20 minor 8 major
+  0.1% 1215/kswapd0: 0% user + 0.1% kernel
+  0.1% 4250/lmkd: 0% user + 0.1% kernel
+  0.1% 4820/emservice: 0% user + 0.1% kernel
+  0.1% 5851/com.sec.imsservice: 0% user + 0% kernel / faults: 860 minor 108 major
+  0.1% 12756/com.android.chrom: 0% user + 0.1% kernel
+  0.1% 1104/ion_system_heap: 0% user + 0.1% kernel
+  0.1% 4884/vendor.samsung.hardware.camera.provider@4.0-service: 0% user + 0.1% kernel / faults: 2023 minor
+  0.1% 5988/com.sec.android.app.launcher: 0% user + 0.1% kernel / faults: 316 minor 11 major
+  0.1% 6284/android.process.acore: 0.1% user + 0% kernel / faults: 275 minor 7 major
+  0.1% 8163/com.samsung.android.honeyboard: 0% user + 0% kernel / faults: 203 minor 48 major
+  0.1% 8312/com.google.android.googlequicksearchbox:googleapp: 0% user + 0% kernel / faults: 87 minor 4 major
+  0.1% 21440/kworker/0:0: 0% user + 0.1% kernel
+  0.1% 39/tz_worker_threa: 0% user + 0.1% kernel
+  0.1% 4453/iod: 0% user + 0% kernel
+  0.1% 12082/com.samsung.android.scloud: 0% user + 0% kernel / faults: 56 minor
+  0.1% 32744/kworker/2:2H: 0% user + 0.1% kernel
+  0% 514/com.sec.android.app.myfiles: 0% user + 0% kernel / faults: 1020 minor 151 major
+  0% 1155/com.sec.android.gallery3d: 0% user + 0% kernel / faults: 868 minor 15 major
+  0% 3725/kworker/u16:3: 0% user + 0% kernel
+  0% 4861/android.hardware.health@2.1-service-samsung: 0% user + 0% kernel / faults: 2 minor
+  0% 5078/argosd: 0% user + 0% kernel
+  0% 5081/rild: 0% user + 0% kernel / faults: 24 minor 19 major
+  0% 8963/android.process.media: 0% user + 0% kernel / faults: 149 minor
+  0% 17072/com.myairtelapp: 0% user + 0% kernel / faults: 12 minor
+  0% 18588/com.sec.android.app.camera: 0% user + 0% kernel / faults: 93 minor
+  0% 4251/servicemanager: 0% user + 0% kernel
+  0% 4490/android.system.suspend@1.0-service: 0% user + 0% kernel
+  0% 5866/com.android.settings: 0% user + 0% kernel / faults: 332 minor 70 major
+  0% 6661/adbd: 0% user + 0% kernel / faults: 185 minor 16 major
+  0% 7/ksoftirqd/0: 0% user + 0% kernel
+  0% 2582/decon0-vsync: 0% user + 0% kernel
+  0% 4833/netd: 0% user + 0% kernel / faults: 67 minor 2 major
+  0% 4846/android.hardware.bluetooth@1.0-service: 0% user + 0% kernel / faults: 3 minor
+  0% 5042/cameraserver: 0% user + 0% kernel / faults: 3 minor 2 major
+  0% 5080/gpsd: 0% user + 0% kernel / faults: 2 minor
+  0% 6730/com.google.android.gms: 0% user + 0% kernel / faults: 199 minor
+  0% 7763/com.google.android.googlequicksearchbox:interactor: 0% user + 0% kernel / faults: 190 minor 21 major
+  0% 10062/com.samsung.android.samsungpositioning: 0% user + 0% kernel / faults: 11 minor
+  0% 14320/kworker/3:0H: 0% user + 0% kernel
+  0% 14821/com.samsung.android.beaconmanager: 0% user + 0% kernel / faults: 779 minor 204 major
+  0% 15135/kworker/1:2H: 0% user + 0% kernel
+  0% 15199/com.linkedin.android: 0% user + 0% kernel / faults: 789 minor 12 major
+  0% 25401/kworker/4:1H: 0% user + 0% kernel
+  0% 27341/com.samsung.android.incallui: 0% user + 0% kernel / faults: 12 minor
+  0% 9/rcu_sched: 0% user + 0% kernel
+  0% 41/ksoftirqd/4: 0% user + 0% kernel
+  0% 2586/decon0: 0% user + 0% kernel
+  0% 4492/android.hardware.keymaster@4.0-service: 0% user + 0% kernel / faults: 45 minor 6 major
+  0% 4786/loop30: 0% user + 0% kernel
+  0% 4870/android.hardware.usb@1.3-service.coral: 0% user + 0% kernel
+  0% 4893/vendor.samsung.hardware.thermal@1.0-service: 0% user + 0% kernel
+  0% 4905/vendor.samsung_slsi.hardware.ofi@1.0-service: 0% user + 0% kernel
+  0% 4933/perfmond: 0% user + 0% kernel
+  0% 5584/com.android.networkstack.process: 0% user + 0% kernel / faults: 87 minor 2 major
+  0% 6549/com.sec.location.nsflp2: 0% user + 0% kernel / faults: 424 minor 28 major
+  0% 7274/kworker/2:0: 0% user + 0% kernel
+  0% 7837/com.google.android.as: 0% user + 0% kernel / faults: 216 minor 16 major
+  0% 8052/kworker/u16:5: 0% user + 0% kernel
+  0% 8192/kworker/5:0: 0% user + 0% kernel
+  0% 8538/com.samsung.discover: 0% user + 0% kernel / faults: 10 minor
+  0% 13636/kworker/u16:0: 0% user + 0% kernel
+  0% 13961/kworker/3:0: 0% user + 0% kernel
+  0% 14764/com.osp.app.signin: 0% user + 0% kernel / faults: 45 minor
+  0% 15048/kworker/2:0H: 0% user + 0% kernel
+  0% 15813/kworker/5:0H: 0% user + 0% kernel
+  0% 17075/com.microsoft.skydrive: 0% user + 0% kernel / faults: 343 minor 1 major
+  0% 17921/kworker/6:0H: 0% user + 0% kernel
+  0% 18734/kworker/u18:3: 0% user + 0% kernel
+  0% 18737/com.samsung.android.fmm: 0% user + 0% kernel / faults: 86 minor
+  0% 22558/com.google.android.permissioncontroller: 0% user + 0% kernel / faults: 590 minor 58 major
+  0% 27140/com.android.vending: 0% user + 0% kernel / faults: 20 minor
+ +0% 19023/kworker/3:2H: 0% user + 0% kernel
+ +0% 19032/dumpsys: 0% user + 0% kernel
+34% TOTAL: 21% user + 10% kernel + 0.2% iowait + 2.1% softirq
+
+C:\adb\platform-tools-latest-windows\platform-tools>
